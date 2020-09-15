@@ -29,13 +29,13 @@
     ],
     "main": "./out/index.js",
     "activationEvents": [
-        "onCommand:extension.myPull",
-        "onCommand:extension.myPush"
+        "onCommand:vscodeGitButtons.myPull",
+        "onCommand:vscodeGitButtons.myPush"
 	],
     "contributes": {
 		"commands": [
 			{
-				"command": "extension.myPull",
+				"command": "vscodeGitButtons.myPull",
                 "title": "Git pull",
                 "icon": {
                     "dark": "assets/pull_black.svg",
@@ -43,7 +43,7 @@
                 }
             },
             {
-				"command": "extension.myPush",
+				"command": "vscodeGitButtons.myPush",
                 "title": "Git push",
                 "icon": {
                     "dark": "assets/push_black.svg",
@@ -54,12 +54,12 @@
         "menus": {
             "scm/title": [
                 {
-                    "command": "extension.myPull",
+                    "command": "vscodeGitButtons.myPull",
                     "group": "navigation",
                     "when": "scmProvider == git"
                 },
                 {
-                    "command": "extension.myPush",
+                    "command": "vscodeGitButtons.myPush",
                     "group": "navigation",
                     "when": "scmProvider == git"
                 }
@@ -67,12 +67,12 @@
         },
         "keybindings": [
             {
-                "command": "extension.myPush",
+                "command": "vscodeGitButtons.myPush",
                 "key": "ctrl+alt+up",
                 "mac": "shift+cmd+up"
             },
             {
-                "command": "extension.myPull",
+                "command": "vscodeGitButtons.myPull",
                 "key": "ctrl+alt+down",
                 "mac": "shift+cmd+down"
             }

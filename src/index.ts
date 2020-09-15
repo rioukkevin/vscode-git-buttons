@@ -20,11 +20,11 @@ export function activate(context: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "rioukkevin.vscode-git-buttons" is now active!');
 
 	// CMD register
-	const pull = vscode.commands.registerCommand('extension.myPull', () => {
+	const pull = vscode.commands.registerCommand('vscodeGitButtons.myPull', () => {
 		vscode.commands.executeCommand('git.pull');
 	});
 
-	const push = vscode.commands.registerCommand('extension.myPush', () => {
+	const push = vscode.commands.registerCommand('vscodeGitButtons.myPush', () => {
 		vscode.commands.executeCommand('git.push');
 	});
 
