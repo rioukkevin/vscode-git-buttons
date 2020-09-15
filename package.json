@@ -2,7 +2,7 @@
     "name": "vscode-git-buttons",
     "displayName": "VSCode Git Buttons",
     "description": "Add git push/pull buttons",
-    "version": "0.0.2",
+    "version": "0.0.1",
     "engines": {
         "vscode": "^1.42.0"
     },
