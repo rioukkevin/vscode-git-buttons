@@ -1,6 +1,5 @@
 import * as vscode from 'vscode';
 import { GitExtension } from './types/git';
-import './config/commitType';
 
 export function activate(context: vscode.ExtensionContext) {
 	// GIT
@@ -18,14 +17,14 @@ export function activate(context: vscode.ExtensionContext) {
 	let repo: any = gitExtension.getAPI(1).repositories[0];
 
 	// Init
-	console.log('Congratulations, your extension "rioukkevin.vscode-git-commit" is now active!');
+	console.log('Congratulations, your extension "rioukkevin.vscode-git-buttons" is now active!');
 
 	// CMD register
-	const pull = vscode.commands.registerCommand('gitButtons.myPull', () => {
+	const pull = vscode.commands.registerCommand('extension.myPull', () => {
 		vscode.commands.executeCommand('git.pull');
 	});
 
-	const push = vscode.commands.registerCommand('gitButtons.myPush', () => {
+	const push = vscode.commands.registerCommand('extension.myPush', () => {
 		vscode.commands.executeCommand('git.push');
 	});
 

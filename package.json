@@ -2,7 +2,7 @@
     "name": "vscode-git-buttons",
     "displayName": "VSCode Git Buttons",
     "description": "Add git push/pull buttons",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.42.0"
     },
@@ -29,13 +29,13 @@
     ],
     "main": "./out/index.js",
     "activationEvents": [
-        "onCommand:git.pull",
-        "onCommand:git.push"
+        "onCommand:extension.myPull",
+        "onCommand:extension.myPush"
 	],
     "contributes": {
 		"commands": [
 			{
-				"command": "git.pull",
+				"command": "extension.myPull",
                 "title": "Git pull",
                 "icon": {
                     "dark": "assets/pull_black.svg",
@@ -43,7 +43,7 @@
                 }
             },
             {
-				"command": "git.push",
+				"command": "extension.myPush",
                 "title": "Git push",
                 "icon": {
                     "dark": "assets/push_black.svg",
@@ -54,12 +54,12 @@
         "menus": {
             "scm/title": [
                 {
-                    "command": "git.pull",
+                    "command": "extension.myPull",
                     "group": "navigation",
                     "when": "scmProvider == git"
                 },
                 {
-                    "command": "git.push",
+                    "command": "extension.myPush",
                     "group": "navigation",
                     "when": "scmProvider == git"
                 }
@@ -67,12 +67,12 @@
         },
         "keybindings": [
             {
-                "command": "gitButtons.myPush",
+                "command": "extension.myPush",
                 "key": "ctrl+alt+up",
                 "mac": "shift+cmd+up"
             },
             {
-                "command": "gitButtons.myPull",
+                "command": "extension.myPull",
                 "key": "ctrl+alt+down",
                 "mac": "shift+cmd+down"
             }
@@ -84,7 +84,7 @@
         "lint": "eslint src --ext ts --fix",
         "watch": "tsc -watch -p ./",
         "build": "vsce package",
-        "local-install":"code --install-extension vscode-git-buttons-0.0.1.vsix",
+        "local-install":"code --install-extension vscode-git-buttons-0.0.2.vsix",
         "pretest": "npm run compile && npm run lint"
     },
     "devDependencies": {
