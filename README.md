@@ -17,7 +17,7 @@ The two actions are available with following commands:
 
 ## Changelog
 
-**0.0.1** (*08-18-2020*): 
+**0.0.1** (*09-15-2020*): 
 Initial release 
 
 ## Credits
