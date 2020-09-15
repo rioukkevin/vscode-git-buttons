@@ -84,7 +84,7 @@
         "lint": "eslint src --ext ts --fix",
         "watch": "tsc -watch -p ./",
         "build": "vsce package",
-        "local-install":"code --install-extension vscode-git-buttons-0.0.2.vsix",
+        "local-install":"code --install-extension vscode-git-buttons-0.0.1.vsix",
         "pretest": "npm run compile && npm run lint"
     },
     "devDependencies": {

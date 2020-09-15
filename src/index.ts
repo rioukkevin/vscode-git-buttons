@@ -21,6 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// CMD register
 	const pull = vscode.commands.registerCommand('vscodeGitButtons.myPull', () => {
+		vscode.window.showInformationMessage('Message de test', {modal: true});
 		vscode.commands.executeCommand('git.pull');
 	});
 
