@@ -1,8 +1,8 @@
-# VSCode Git Commit (BETA)
+# VSCode Git Buttons (BETA)
 
-VSCode git commit is a VSCode extension to create nice commit message with emoji and prefix.
+VSCode git buttons is a VSCode extension made to avoid 3 click to push or pull in scm view
 
-> This is a beta version, more features are coming
+> This is a beta version, more features are coming if needed
 
 ## How to use ?
 
@@ -16,6 +16,9 @@ The two actions are available with following commands:
 - push `ctrl+alt+up` (`cmd+shift+up` on Mac)
 
 ## Changelog
+
+**0.0.2** (*09-21-2020*): 
+📄docs: Update readme
 
 **0.0.1** (*09-15-2020*): 
 Initial release 

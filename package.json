@@ -2,7 +2,7 @@
     "name": "vscode-git-buttons",
     "displayName": "VSCode Git Buttons",
     "description": "Add git push/pull buttons",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.42.0"
     },
@@ -84,7 +84,7 @@
         "lint": "eslint src --ext ts --fix",
         "watch": "tsc -watch -p ./",
         "build": "vsce package",
-        "local-install":"code --install-extension vscode-git-buttons-0.0.1.vsix",
+        "local-install":"code --install-extension vscode-git-buttons-0.0.2.vsix",
         "pretest": "npm run compile && npm run lint"
     },
     "devDependencies": {
